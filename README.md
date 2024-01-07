@@ -8,7 +8,7 @@ Pricing Analytics with Python
     Features (dataframe columns) explanation:
     1. product_id: A unique identifier for each product in the dataset.
     2. product_category_name: The name of the product category to which the product belongs.
-    3. month_year: The month and year of the retail transaction or data recording.
+    3. month_year: transaction date (dd-mm-yyyy).
     4. qty: The quantity of the product sold or purchased in a given transaction.
     5. total_price: The total price of the product, including any applicable taxes or discounts.
     6. freight_price: The cost of shipping or freight associated with the product.
@@ -19,15 +19,17 @@ Pricing Analytics with Python
     11. product_weight_g: The weight of the product in grams.
     12. product_score: A score or rating associated with the product’s quality, popularity, or other relevant factors.
     13. customers: The number of customers who purchased the product in a given transaction.
-    14. weekday: The day of the week on which the transaction occurred.
-    15.weekend: A binary flag indicating whether the transaction occurred on a weekend (1) or not (0).
-    16. holiday: A binary flag indicating whether the transaction occurred on a holiday (1) or not (0).
+    14. weekday: number of weekdays in that month of transaction
+    15. weekend: number of weekends in that month of transaction.
+    16. holiday: number of holidays in that month of transaction.
     17. month: The month in which the transaction occurred.
     18. year: The year in which the transaction occurred.
     19. s: the effect of seasonality
     20. comp_1, comp_2, comp_3: Competitor information or variables related to competitors’ prices, promotions, or other relevant factors.
     21. ps1, ps2, ps3: Product score or rating associated with competitors’ products.
     22. fp1, fp2, fp3: Freight or shipping cost associated with competitors’ products.
+    23. volume: unknow???
+    24. lag_price: unit price of the previous month
 
 ## Acknowledgement 
     Data Source: https://www.kaggle.com/datasets/suddharshan/retail-price-optimization
